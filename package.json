@@ -1,7 +1,11 @@
 {
   "name": "tssentials",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Essential functions and types for typescript projects.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timble-one/tssentials.git"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
