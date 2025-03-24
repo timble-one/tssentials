@@ -1,6 +1,6 @@
 {
   "name": "tssentials",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Essential functions and types for typescript projects.",
   "repository": {
     "type": "git",
