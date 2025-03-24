@@ -21,11 +21,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint ."
   },
   "author": "Timo Bühlmann",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.7.3"
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.28.0"
   }
 }
