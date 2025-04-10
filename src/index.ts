@@ -1,1 +1,1 @@
-export {processIfPresent, ifPresent} from './util'
+export {processIfPresent, ifPresent, apply} from './util'
