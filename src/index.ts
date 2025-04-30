@@ -1,1 +1,1 @@
-export {processIfPresent, ifPresent, apply} from './util.js'
+export {processIfPresent, ifPresent, apply, notEmpty} from './util.js'
