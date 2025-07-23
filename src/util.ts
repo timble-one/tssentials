@@ -13,3 +13,8 @@ export const apply = <T, R>
 export function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
     return value !== null && value !== undefined;
 }
+
+export const ifTruthy = <T, R>
+    (v: T | null | undefined, callback: (v: T) => R)
+    : R | undefined =>
+    ifPresent(v, v => v ? callback(v) : undefined)
