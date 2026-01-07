@@ -2,11 +2,13 @@
 
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
+import * as reactHooks from "typescript-eslint";
 
 export default tseslint.config(
   {
-    files: ['./src/**/*.ts'],
+      ignores: ['dist']
   },
   eslint.configs.recommended,
   tseslint.configs.recommended,
+  reactHooks.configs.recommended,
 );

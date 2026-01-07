@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "./src",
+    "jsx": "react-jsx",
     "target": "es2015",
     "declaration": true,
     "outDir": "./dist",
   },
   "include": [
-    "src/**/*",
-    "dist/index.d.ts"
+    "src/**/*"
+  ],
+  "exclude": [
+    "dist"
   ]
 }
