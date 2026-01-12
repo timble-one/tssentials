@@ -1,6 +1,6 @@
 import {ReactNode, useState} from "react";
 import {apply} from "tssentials";
-import {DataVersionContext, DataVersionContextType} from "./DataVersionContext.js";
+import { DataVersionContext, DataVersionContextType } from "./DataVersionContext.js";
 
 export const DataVersionContextProvider = (props: {children: ReactNode}) => {
     const [state, setState] = useState<DataVersionContextType>({})

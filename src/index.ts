@@ -9,4 +9,4 @@ export {
 export {useStoredData} from './use-stored-data/useStoredData.js'
 export {
     DataVersionContextProvider as StoredDataVersionContextProvider
-} from './use-stored-data/version/DataVersionContextProvider.js'
+} from './use-stored-data/use-version/DataVersionContextProvider.js'
