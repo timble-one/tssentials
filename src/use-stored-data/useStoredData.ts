@@ -24,12 +24,13 @@ export const useStoredData =
         : {obj: defaultValue, raw: ''}
     )
     useVersion({key, value: state, load: () => setState(load(key, schema, defaultValue))})
-    const setter = (a: SetStateAction<z.infer<SCHEMA>>) =>
-        setState(s => {
+    const setter = (a: SetStateAction<z.infer<SCHEMA>>) => {
+        return setState(s => {
             const next = isUpdater(a) ? a(s.obj) : a;
-            schema.parse(next);
-            return { obj: next, raw: '' };
-        })
+            const result = schema.safeParse(next);
+            return { obj: result.success ? result.data : s.obj, raw: '' };
+        });
+    }
     const resetter = () => setState({obj: defaultValue, raw: ''})
     return [state.obj, setter, resetter]
 }
